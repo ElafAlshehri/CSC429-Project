@@ -66,10 +66,10 @@ python app_secure.py
 Visit: https://localhost:5000
 
 ## Security Testing Guide
-**1. SQL Injection**
-Login Input:
-Username: ' OR '1'='1' --
-Password: anything
+**1. SQL Injection**  
+Login Input:  
+Username: ' OR '1'='1' --  
+Password: anything  
 
 **2. Cross-Site Scripting (XSS)**
 1. Login and go to the comment form.
