@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h2>Welcome Admin {{ username }}!</h2>
+
+    <h3>All Comments (View Only):</h3>
+    {% for user, content in comments %}
+    <p><strong>{{ user }}:</strong> {{ content|safe }}</p>
+    {% endfor %}
+
+    <br><a href="/logout">Logout</a>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+
+    <h3>Leave a Comment:</h3>
+    <form method="POST" action="/comment">
+        <textarea name="comment" rows="4" cols="40" required></textarea><br>
+        <button type="submit">Post</button>
+    </form>
+
+    <h3>All Comments:</h3>
+    {% for user, content in comments %}
+    <p><strong>{{ user }}:</strong> {{ content|safe }}</p>
+    {% endfor %}
+
+    <br><a href="/logout">Logout</a>
+</body>
+
+</html>
