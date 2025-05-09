@@ -6,35 +6,18 @@
 3. Najla Alharthi - 443201049
 4. Ghaida Almahmoud - 443200545
 
-**Project Structure**
-├── insecure/
-│   ├── static/
-│   ├── templates/
-│   ├── app_insecure.py
-│   └── users.db
-
-├── secure/
-│   ├── static/
-│   ├── templates/
-│   ├── .env
-│   ├── app_secure.py
-│   ├── cert.pem
-│   ├── key.pem
-│   ├── keyGenerator.py
-│   └── users.db
-
 ## Overview
 - insecure/app_insecure.py: A vulnerable web app containing common flaws such as:
   - SQL Injection (unsanitized SQL queries)
   - Weak password hashing (MD5)
   - Lack of role-based access control
-  - No output sanitization (XSS vulnerable)
+  - XSS vulnerable
 
-- secure/app_secure.py: A hardened version using:
-  - bcrypt for strong password hashing
+- secure/app_secure.py: A mitigated version using:
   - Prepared statements to prevent SQL injection
-  - XSS protection using markupsafe.escape
+  - bcrypt for strong password hashing
   - Role-based access control (admin/user)
+  - XSS protection using markupsafe.escape
   - HTTPS with self-signed certificates
 
 ## How to Run
