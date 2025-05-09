@@ -8,9 +8,7 @@
 
 **Project Structure**
 ├── insecure/
-
 │   ├── static/
-
 │   ├── templates/
 │   ├── app_insecure.py
 │   └── users.db
