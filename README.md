@@ -9,13 +9,23 @@
 ## Project Structure
 insecure/  
 ├── static/  
+│   └── style.css  
 ├── templates/  
+│   ├── admin.html  
+│   ├── dashboard.html  
+│   ├── login.html  
+│   └── register.html  
 ├── app_insecure.py  
 └── users.db  
 
 secure/  
 ├── static/  
+│   └── style.css  
 ├── templates/  
+│   ├── admin.html  
+│   ├── dashboard.html  
+│   ├── login.html  
+│   └── register.html  
 ├── .env  
 ├── app_secure.py  
 ├── cert.pem  
