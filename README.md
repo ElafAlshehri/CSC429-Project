@@ -29,13 +29,13 @@ pip install flask bcrypt python-dotenv
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
 
 ### Run Insecure App
-cd insecure
-python app_insecure.py
+cd insecure  
+python app_insecure.py  
 Visit: http://localhost:5000
 
 ### Run Secure App
-cd secure
-python app_secure.py
+cd secure  
+python app_secure.py  
 Visit: https://localhost:5000
 
 ## Security Testing Guide
