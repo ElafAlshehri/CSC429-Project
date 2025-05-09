@@ -6,6 +6,23 @@
 3. Najla Alharthi - 443201049
 4. Ghaida Almahmoud - 443200545
 
+## Project Structure
+insecure/  
+├── static/  
+├── templates/  
+├── app_insecure.py  
+└── users.db  
+
+secure/  
+├── static/  
+├── templates/  
+├── .env  
+├── app_secure.py  
+├── cert.pem  
+├── key.pem  
+├── keyGenerator.py  
+└── users.db  
+
 ## Overview
 - insecure/app_insecure.py: A vulnerable web app containing common flaws such as:
   - SQL Injection (unsanitized SQL queries)
